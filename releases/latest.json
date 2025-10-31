@@ -1,7 +1,50 @@
 {
   "DEFAULT": {
-    "version": "1.0.0",
-    "download_url": "https://raw.githubusercontent.com/f4rsoftware/pardus-toolbar-builds/main/releases/DEFAULT/pardus-toolbar_DEFAULT_1.0.0_amd64.deb",
-    "changelog": "İlk sürüm"
+    "version": "1.5.0",
+    "download_url": "https://raw.githubusercontent.com/f4rsoftware/pardus-toolbar-builds/main/releases/DEFAULT/pardus-toolbar_DEFAULT_1.5.0_amd64.deb",
+    "changelog": "Genel kararlılık iyileştirmeleri ve performans artışı.",
+    "release_status": "public",              // public → herkes yükleyebilir, phased → sınırlı rollout
+    "target_clients": null,                  // sadece phased durumunda liste dolar
+    "allowed_since": null,                   // tarih geldiğinde phased → public olur
+    "force_update": false,                   // true → sürüm aynı olsa bile update zorunlu
+    "recommended_delay": 180,                // client bekleme süresi (saniye)
+    "retry_policy": {
+      "max_attempts": 3,
+      "retry_interval": 300
+    }
+  },
+
+  "RIZE-HOSP-001": {
+    "version": "1.6.0",
+    "download_url": "https://raw.githubusercontent.com/f4rsoftware/pardus-toolbar-builds/main/releases/RIZE-HOSP-001/pardus-toolbar_RIZE-HOSP-001_1.6.0_amd64.deb",
+    "changelog": "Yeni uyarı sesi, hata düzeltmeleri, hızlı bağlantı optimizasyonu.",
+    "release_status": "phased",
+    "target_clients": [
+      "MAC:00-1B-44-11-3A-B7",
+      "MAC:00-1B-44-11-3A-C8",
+      "RIZE-HOSP-001"
+    ],
+    "allowed_since": "2025-11-02T00:00:00Z",
+    "force_update": false,
+    "recommended_delay": 120,
+    "retry_policy": {
+      "max_attempts": 3,
+      "retry_interval": 300
+    }
+  },
+
+  "BURSA-HOSP-001": {
+    "version": "1.5.2",
+    "download_url": "https://raw.githubusercontent.com/f4rsoftware/pardus-toolbar-builds/main/releases/BURSA-HOSP-001/pardus-toolbar_BURSA-HOSP-001_1.5.2_amd64.deb",
+    "changelog": "Bursa hastanesine özel sistem ayarları ve güncellenmiş loglama yapısı.",
+    "release_status": "public",
+    "target_clients": null,
+    "allowed_since": null,
+    "force_update": true,
+    "recommended_delay": 60,
+    "retry_policy": {
+      "max_attempts": 2,
+      "retry_interval": 180
+    }
   }
 }
