@@ -3,11 +3,11 @@
     "version": "1.5.0",
     "download_url": "https://raw.githubusercontent.com/f4rsoftware/pardus-toolbar-builds/main/releases/DEFAULT/pardus-toolbar_DEFAULT_1.5.0_amd64.deb",
     "changelog": "Genel kararlılık iyileştirmeleri ve performans artışı.",
-    "release_status": "public",              // public → herkes yükleyebilir, phased → sınırlı rollout
-    "target_clients": null,                  // sadece phased durumunda liste dolar
-    "allowed_since": null,                   // tarih geldiğinde phased → public olur
-    "force_update": false,                   // true → sürüm aynı olsa bile update zorunlu
-    "recommended_delay": 180,                // client bekleme süresi (saniye)
+    "release_status": "public",             
+    "target_clients": null,               
+    "allowed_since": null,                 
+    "force_update": false,                  
+    "recommended_delay": 180,                
     "retry_policy": {
       "max_attempts": 3,
       "retry_interval": 300
